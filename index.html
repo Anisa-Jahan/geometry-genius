@@ -29,11 +29,11 @@
                     <h2 class="card-title">Triangle</h2>
                     <p>Area (A) = 0.5 x b x h</p>
                     <div>
-                    <input type="text" class="w-24 p-2 rounded text-xl" placeholder="b"> <span class="ml-1 mr-1">cm</span>
-                    <input type="text" class="w-24 p-2 rounded text-xl" placeholder="h"> <span class="ml-1 mr-1">cm</span>
+                    <input type="text" id="triangle-base" class="w-24 p-2 rounded text-xl" placeholder="b"> <span class="ml-1 mr-1">cm</span>
+                    <input type="text" id="triangle-height" class="w-24 p-2 rounded text-xl" placeholder="h"> <span class="ml-1 mr-1">cm</span>
                     </div>
                     <div class="card-actions justify-end">
-                      <button class="btn btn-primary w-full text-xl">Calculate Area</button>
+                      <button onclick="calculateTriangleArea()" class="btn btn-primary w-full text-xl">Calculate Area</button>
                     </div>
                   </div>
                 </div>
@@ -48,11 +48,11 @@
                     <h2 class="card-title">Rectangle</h2>
                     <p>Area (A) = w x l</p>
                     <div>
-                      <input type="text" class="w-24 p-2 rounded text-xl" placeholder="w"> <span class="ml-1 mr-1">cm</span>
-                      <input type="text" class="w-24 p-2 rounded text-xl" placeholder="l"> <span class="ml-1 mr-1">cm</span>
+                      <input id="rectangle-width" type="text" class="w-24 p-2 rounded text-xl" placeholder="w"> <span class="ml-1 mr-1">cm</span>
+                      <input id="rectangle-length" type="text" class="w-24 p-2 rounded text-xl" placeholder="l"> <span class="ml-1 mr-1">cm</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class="btn btn-primary w-full text-xl">Calculate Area</button>
+                      <button onclick="calculateRectangleArae()" class="btn btn-primary w-full text-xl">Calculate Area</button>
                     </div>
                   </div>
                 </div>
@@ -140,5 +140,8 @@
             </div>
         </div>
     </main>
+
+    <!-- JS files -->
+     <script src="scripts/triangle-calculate.js"></script>
 </body>
 </html>
